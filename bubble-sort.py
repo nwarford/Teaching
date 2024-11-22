@@ -1,4 +1,5 @@
 def bubble_sort(arr):
+    numsteps = 0
   
     # Outer loop to iterate through the list n times
     for n in range(len(arr) - 1, 0, -1):
@@ -16,6 +17,8 @@ def bubble_sort(arr):
                 # Mark that a swap has occurred
                 swapped = True
                 print(arr)
+                numsteps += 1
+                print("Number of steps:",numsteps)
         
         # If no swaps occurred, the list is already sorted
         if not swapped:
@@ -23,4 +26,4 @@ def bubble_sort(arr):
 
 # Source: https://www.geeksforgeeks.org/python-program-for-bubble-sort/
 
-bubble_sort([9,8,7,6,5,4,3,2,1])
+bubble_sort([3,2,1])

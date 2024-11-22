@@ -11,10 +11,11 @@ def insertionSort(arr):
         while j >= 0 and key < arr[j]:  # Move elements greater than key one position ahead
             arr[j+1] = arr[j]  # Shift elements to the right
             j -= 1
-            # print(arr)
+            print(arr)
         arr[j+1] = key  # Insert the key in the correct position
         print(arr, "\n")
         
 # Source: https://www.geeksforgeeks.org/python-program-for-insertion-sort/
 
-insertionSort([2,4,6,8,0,9,7,5,3,1])
+# insertionSort([2,4,6,8,0,9,7,5,3,1])
+insertionSort([5,4,3,2,1])
